@@ -6,6 +6,15 @@ Replace this file with the actual LOI Generator logic.
 
 import streamlit as st
 
+# ---------------------------------------------------------------------------
+# Authentication check
+# ---------------------------------------------------------------------------
+
+if not st.session_state.get("authenticated"):
+    st.warning("Please sign in from the main page.")
+    st.stop()
+
+
 st.set_page_config(
     page_title="LOI Generator — Casco Energy",
     page_icon="📄",
