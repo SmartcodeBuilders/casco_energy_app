@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.csv
+*.xlsx
+*.xls
+*.7z
+_sir_temp/
+raw/
+
+# Never commit secrets
+.streamlit/secrets.toml
