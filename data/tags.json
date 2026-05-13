@@ -1,0 +1,414 @@
+[
+  {
+    "name": "SECTION_PROJECT_INFO",
+    "label": "Project Information",
+    "type": "label_only"
+  },
+  {
+    "name": "PROJECT_NAME",
+    "label": "Project Name",
+    "type": "text"
+  },
+  {
+    "name": "LANDLORD_NAME",
+    "label": "Landlord Legal Entity Name (e.g., 'ACME, LLC')",
+    "type": "text"
+  },
+  {
+    "name": "SITE1_ADDRESS",
+    "label": "Site Address",
+    "type": "text"
+  },
+  {
+    "name": "NAMEPLATE_CAPACITY_KW",
+    "label": "Nameplate Capacity (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "ENERGY_CAPACITY_KWH",
+    "label": "Energy Capacity (MWh)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "SITE_CITY",
+    "label": "Site City",
+    "type": "text"
+  },
+  {
+    "name": "SITE_STATE",
+    "label": "Site State",
+    "type": "text"
+  },
+  {
+    "name": "INSTALLATION_RISK_DESCRIP",
+    "label": "Installation Risk Description",
+    "type": "text"
+  },
+  {
+    "name": "FLOOD_RISK_DESCRIP",
+    "label": "Flood Risk Description",
+    "type": "text"
+  },
+  {
+    "name": "WETLANDS_RISK_DESCRIP",
+    "label": "Wetlands Risk Description",
+    "type": "text"
+  },
+  {
+    "name": "MORATORIA_RISK_DESCRIP",
+    "label": "Moratoria Risk Description",
+    "type": "text"
+  },
+  {
+    "name": "FIRE_RISK_DESCRIP",
+    "label": "Fire Risk Description",
+    "type": "text"
+  },
+  {
+    "name": "SITE_COUNTY",
+    "label": "Site County",
+    "type": "text"
+  },
+  {
+    "name": "SECTION_LOI",
+    "label": "LOI",
+    "type": "label_only"
+  },
+  {
+    "name": "DATE_TODAY",
+    "label": "LOI Date",
+    "type": "date"
+  },
+  {
+    "name": "LEASE_RENT",
+    "label": "Lease Payment Amount (e.g., '$100,000.00')",
+    "type": "number",
+    "currency": true
+  },
+  {
+    "name": "OPTION_PAYMENT_AMOUNT",
+    "label": "Option Payment Amount",
+    "type": "number",
+    "currency": true
+  },
+  {
+    "name": "OPTION_PAYMENT_WORDS",
+    "label": "Option Payment Words",
+    "type": "text"
+  },
+  {
+    "name": "LEASE_RATE",
+    "label": "Lease Rate ($/MW-month)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "EXCLUSIVITY_DATE",
+    "label": "Exclusivity Expiration Date",
+    "type": "date"
+  },
+  {
+    "name": "SECTION_NETWORK_INFO",
+    "label": "Network Information",
+    "type": "label_only"
+  },
+  {
+    "name": "NETWORK_TYPE",
+    "label": "Network Type",
+    "type": "text"
+  },
+  {
+    "name": "FEEDER_NAME",
+    "label": "Feeder Name",
+    "type": "text"
+  },
+  {
+    "name": "FEEDER_VOLTAGE",
+    "label": "Feeder Voltage (kV)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "HOSTING_CAPACITY",
+    "label": "Hosting Capacity (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "MAX_CHARGE_CAPACITY",
+    "label": "Max Charge Capacity (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "MAX_DISCHARGE_CAPACITY",
+    "label": "Max Discharge Capacity (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "QUEUED_DG",
+    "label": "Queued DG (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "SUBSTATION_NAME",
+    "label": "Substation Name",
+    "type": "text"
+  },
+  {
+    "name": "SUBSTATION_HEADROOM",
+    "label": "Substation Headroom (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "QUEUED_CAPACITY",
+    "label": "Queued Resource Capacity (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "SUBSTATION_INSTALLED_DG",
+    "label": "Substation Installed DG (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "FEEDER_INSTALLED_DG",
+    "label": "Feeder Installed DG (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "SUBSTATION_HOSTING_CAPACITY",
+    "label": "Substation Hosting Capacity (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "SUBSTATION_DEAD_DG",
+    "label": "Substation Dead DG (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "SUBSTATION_NET_QUEUED_DG",
+    "label": "Substation Net Queued DG (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "TRANSMISSION_VOLTAGE",
+    "label": "Transmission Voltage (kV)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "SUBSTATION_DISCHARGE_SUMMARY",
+    "label": "Substation Discharge Summary",
+    "type": "text"
+  },
+  {
+    "name": "ISO_QUEUED_DG",
+    "label": "ISO Queued DG (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "ISO_QUEUED_PV",
+    "label": "ISO Queued PV (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "ISO_QUEUED_ESS",
+    "label": "ISO Queued ESS (MW)",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "SECTION_CLIENT_INFO",
+    "label": "Client Information",
+    "type": "label_only"
+  },
+  {
+    "name": "CLIENT_NAME",
+    "label": "Client Name",
+    "type": "text"
+  },
+  {
+    "name": "CLIENT_EMAIL",
+    "label": "Client Email",
+    "type": "text"
+  },
+  {
+    "name": "SECTION_ZONING",
+    "label": "Zoning",
+    "type": "label_only"
+  },
+  {
+    "name": "PROPERTY_ZONE",
+    "label": "Zoning Classification",
+    "type": "text"
+  },
+  {
+    "name": "NEIGHBORHOOD_ZONES",
+    "label": "Neighborhood Zones",
+    "type": "text"
+  },
+  {
+    "name": "ZONE_DESCRIPTION",
+    "label": "Zone Description",
+    "type": "text"
+  },
+  {
+    "name": "NEIGHBORHOOD_RISK_CONCLUSION",
+    "label": "Neighborhood Risk Conclusion",
+    "type": "text"
+  },
+  {
+    "name": "NEIGHBORHOOD_RISK_DESCRIPTION",
+    "label": "Neighborhood Risk Description",
+    "type": "text"
+  },
+  {
+    "name": "SECTION_UTILITY",
+    "label": "Utility",
+    "type": "label_only"
+  },
+  {
+    "name": "MARKET_PROGRAM_NAME",
+    "label": "Market Program",
+    "type": "text"
+  },
+  {
+    "name": "MARKET_PROGRAM_ACRONYM",
+    "label": "Market Program Name Short",
+    "type": "text"
+  },
+  {
+    "name": "ISO_NAME",
+    "label": "ISO Name",
+    "type": "text"
+  },
+  {
+    "name": "ISO_ZONE",
+    "label": "ISO Zone",
+    "type": "text"
+  },
+  {
+    "name": "CHARGE_PERIOD",
+    "label": "Charge Period",
+    "type": "hourly_period",
+    "default_start": "14:00",
+    "default_end": "21:00"
+  },
+  {
+    "name": "DISCHARGE_PERIOD",
+    "label": "Discharge Period",
+    "type": "hourly_period",
+    "default_start": "14:00",
+    "default_end": "21:00"
+  },
+  {
+    "name": "UTILITY_NAME_SHORT",
+    "label": "Utility Name Short",
+    "type": "text"
+  },
+  {
+    "name": "CHARGING_HOURS",
+    "label": "System Charging Hours",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "CHARGING_RATE",
+    "label": "Hourly Charging Rate",
+    "type": "number",
+    "currency": false
+  },
+  {
+    "name": "SUBSTATION_CAPACITY",
+    "label": "Substation Capacity (MW)",
+    "type": "number"
+  },
+  {
+    "name": "SUBSTATION_IMPACT",
+    "label": "Substation Impact Conclusion",
+    "type": "text"
+  },
+  {
+    "name": "SECTION_ENVIRONMENTAL",
+    "label": "Environmental",
+    "type": "label_only"
+  },
+  {
+    "name": "STATE_ENV_NAME",
+    "label": "State Environmental Agency Name",
+    "type": "text"
+  },
+  {
+    "name": "STATE_PROTECTED_LAND_REF",
+    "label": "State Protected Lands Reference",
+    "type": "text"
+  },
+  {
+    "name": "STATE_SPECIES_NAME",
+    "label": "State Protected Migratory Species Entity Name",
+    "type": "text"
+  },
+  {
+    "name": "WETLANDS_DESCRIPTION",
+    "label": "Wetlands Description",
+    "type": "text"
+  },
+  {
+    "name": "PROTECTED_LANDS_DESCRIPTION",
+    "label": "Protected Lands Description",
+    "type": "text"
+  },
+  {
+    "name": "PROTECTED_SPECIES_DESCRIPTION",
+    "label": "Protected Species Description",
+    "type": "text"
+  },
+  {
+    "name": "HISTORIC_PRESERVATION_DESCRIPTION",
+    "label": "Historic Preservation Description",
+    "type": "text"
+  },
+  {
+    "name": "UST_DESCRIPTION",
+    "label": "Underground Storage Tank (UST) Description",
+    "type": "text"
+  },
+  {
+    "name": "SECTION_TECHNICAL_DESIGN",
+    "label": "Technical Design",
+    "type": "label_only"
+  },
+  {
+    "name": "TOPO_CONCLUSION",
+    "label": "Topography Conclusion",
+    "type": "text"
+  },
+  {
+    "name": "TOPO_DESCRIPTION",
+    "label": "Topography Description",
+    "type": "text"
+  },
+  {
+    "name": "URBAN_RURAL",
+    "label": "Urban/Rural Classification",
+    "type": "text"
+  },
+  {
+    "name": "TOPO_NEXT_STEPS",
+    "label": "Topography Next Steps",
+    "type": "text"
+  }
+]

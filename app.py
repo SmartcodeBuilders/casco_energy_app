@@ -31,14 +31,14 @@ st.markdown("""
     /* Login form */
     .login-wrapper {
         max-width: 380px;
-        margin: 6rem auto 0 auto;
-        padding: 2.5rem;
+        margin: 0rem auto 0 auto;
+        padding: 1rem;
         border: 1px solid var(--secondary-background-color);
         border-radius: 10px;
     }
     .login-title {
         font-family: 'IBM Plex Mono', monospace;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: 600;
         color: var(--text-color);
         margin-bottom: 0.25rem;
@@ -47,7 +47,7 @@ st.markdown("""
         font-size: 0.85rem;
         color: var(--text-color);
         opacity: 0.5;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     /* Cards */
@@ -93,8 +93,8 @@ st.markdown("""
     /* Header */
     .hub-header {
         border-bottom: 2px solid var(--text-color);
-        padding-bottom: 1.5rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 0.5rem;
+        # background-color: #0a0;
     }
     .hub-title {
         font-family: 'IBM Plex Mono', monospace;
@@ -118,8 +118,29 @@ st.markdown("""
 
 def check_login():
     """Show login form and return True if authenticated."""
+
+    # User already authenticated
     if st.session_state.get("authenticated"):
+
+        # Restore sidebar after login
+        st.markdown("""
+        <style>
+        [data-testid="stSidebar"] {
+            display: block;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+
         return True
+
+    # Hide sidebar before login
+    st.markdown("""
+    <style>
+    [data-testid="stSidebar"] {
+        display: none;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
     st.markdown("""
     <div class="login-wrapper">
@@ -130,14 +151,16 @@ def check_login():
 
     # Center the form using columns
     _, col, _ = st.columns([1, 1.2, 1])
+
     with col:
         username = st.text_input("Username", placeholder="username")
         password = st.text_input("Password", type="password", placeholder="••••••••")
         login_btn = st.button("Sign in", type="primary", use_container_width=True)
 
         if login_btn:
-            valid_user = st.secrets.get("LOGIN_USERNAME", "admin")
-            valid_pass = st.secrets.get("LOGIN_PASSWORD", "casco2026")
+            valid_user = st.secrets["LOGIN_USERNAME"]
+            valid_pass = st.secrets["LOGIN_PASSWORD"]
+
             if username == valid_user and password == valid_pass:
                 st.session_state["authenticated"] = True
                 st.rerun()
@@ -215,7 +238,8 @@ for i in range(0, len(APPS), cols_per_row):
 # Footer
 # ---------------------------------------------------------------------------
 
-st.markdown("<br><br>", unsafe_allow_html=True)
+# st.markdown("<br><br>", unsafe_allow_html=True)
+st.markdown("<br>", unsafe_allow_html=True)
 st.markdown(
     "<p style='font-family: IBM Plex Mono, monospace; font-size: 0.7rem; "
     "color: var(--text-color); opacity: 0.4; text-align: center;'>"
