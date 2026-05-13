@@ -9,6 +9,9 @@ import logging
 import streamlit as st
 from datetime import datetime
 from pathlib import Path
+from auth import require_auth
+
+require_auth()
 
 # Import core logic from the scraper module
 # Make sure sir_download_combine.py is in the same directory as app.py
